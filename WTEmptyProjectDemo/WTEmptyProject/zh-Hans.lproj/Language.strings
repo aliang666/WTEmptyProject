@@ -8,4 +8,8 @@
 "translate_title" = "翻译";
 "device_title" = "设备";
 "user_title" = "我的";
+"tab_my_notice"="个人信息";
+"my_main_play_set" = "功能设置";
+"my_main_language" = "语言";
+"my_main_about" = "关于";
 
