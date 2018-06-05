@@ -7,6 +7,10 @@
 //
 
 #import "AppDelegate.h"
+#import "WTTranslateViewController.h"
+#import "WTDeviceViewController.h"
+#import "WTUserCenterViewController.h"
+#import "WTLoginViewController.h"
 
 @interface AppDelegate ()
 
@@ -20,13 +24,46 @@
     self.window.backgroundColor = [UIColor redColor];
     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];    
     
-    UIViewController *vc = [[UIViewController alloc] init];
-    vc.view.backgroundColor = [UIColor whiteColor];
-    self.window.rootViewController = vc;
-    
-    [self.window makeKeyAndVisible];
-    return YES;}
+    //读取登录信息
+    [WTLoginInfo readLoginInfo];
+    [self initRoot];
+    return YES;
+}
 
+- (void)initRoot {
+    if ([WTLoginInfo isLogin]) {
+        WTTabBarItem *itIndex = [[WTTabBarItem alloc] init];
+        itIndex.titleText = @"翻译";
+        itIndex.normalImage = @"ind_btn_tab_work_n";
+        itIndex.selectImage = @"ind_btn_tab_work_s";
+        itIndex.vc = [[WTTranslateViewController alloc] init];
+        
+        WTTabBarItem *itCenter = [[WTTabBarItem alloc] init];
+        itCenter.titleText = @"设备";
+        itCenter.normalImage = @"ind_btn_tab_news_n";
+        itCenter.selectImage = @"ind_btn_tab_news_s";
+        itCenter.vc = [[WTDeviceViewController alloc] init];
+        
+        WTTabBarItem *itMine = [[WTTabBarItem alloc] init];
+        itMine.titleText = @"我的";
+        itMine.normalImage = @"ind_btn_tab_tool_n";
+        itMine.selectImage = @"ind_btn_tab_tool_s";
+        itMine.vc = [[WTUserCenterViewController alloc] init];
+        
+        WTTabbarController *tab = [[WTTabbarController alloc] init];
+        tab.itemsArray = [NSArray arrayWithObjects:itIndex,itCenter,itMine, nil];
+        
+        UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:tab];
+        nav.navigationBarHidden = YES;
+        self.window.rootViewController = nav;
+        [self.window makeKeyAndVisible];
+    } else {
+        UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:[[WTLoginViewController alloc] init]];
+        nav.navigationBarHidden = YES;
+        self.window.rootViewController = nav;
+        [self.window makeKeyAndVisible];
+    }
+}
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

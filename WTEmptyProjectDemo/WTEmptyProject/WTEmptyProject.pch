@@ -8,4 +8,7 @@
 
 #ifndef WTEmptyProject_pch
 #define WTEmptyProject_pch
+#import "WTBaseCore.h"
+#import "WTLoginInfo.h"
+#import "WTRequestUtil.h"
 #endif
