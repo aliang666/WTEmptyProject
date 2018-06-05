@@ -5,6 +5,7 @@
   Created by admin on 2018/6/1.
   Copyright © 2018年 计恩良. All rights reserved.
 */
+"app_name_sure"="讯飞翻译";
 "translate_title" = "翻译";
 "device_title" = "设备";
 "user_title" = "我的";
@@ -12,4 +13,6 @@
 "my_main_play_set" = "功能设置";
 "my_main_language" = "语言";
 "my_main_about" = "关于";
+"my_about_feedback" = "意见反馈";
+"my_trans_machine_after_service" = "售后服务";
 
