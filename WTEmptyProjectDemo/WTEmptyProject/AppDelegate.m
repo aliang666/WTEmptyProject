@@ -26,6 +26,7 @@
     
     //读取登录信息
     [WTLoginInfo readLoginInfo];
+    //进入app
     [self initRoot];
     return YES;
 }
