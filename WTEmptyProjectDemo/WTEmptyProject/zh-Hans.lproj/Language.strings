@@ -15,4 +15,23 @@
 "my_main_about" = "关于";
 "my_about_feedback" = "意见反馈";
 "my_trans_machine_after_service" = "售后服务";
+"xy_afterSale"="售后服务";
 
+"my_info_detail" = "个人资料";
+"my_info_change_password" = "修改密码";
+"userinfo_nickname"="昵称:";
+"userinfo_phone"="手机:";
+"userinfo_email"="邮箱:";
+"userinfo_sex"="性别:";
+"man"="男";
+"women"="女";
+"Birthday"="生日:";
+"userinfo_address"="地址:";
+"userinfo_email"="邮箱:";
+"choose_sex"="性别选择";
+"choose_date"="日期选择";
+"Amend_address"="请输入您的地址";
+"notice_regist_nickname"="请输入您的昵称";
+
+"my_login_login_out" = "退出";
+"userinfo_save"="保存";
