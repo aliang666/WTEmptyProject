@@ -2,14 +2,21 @@ platform :ios,'8.0'
 inhibit_all_warnings!
 
 target "WTEmptyProject" do
+    #基础包
     pod 'WTBaseCore', :git => "https://github.com/aliang666/WTBaseCore.git"
+    #业务数据和自定义view
     pod 'WTBusinessData', :git => "https://github.com/aliang666/WTBusinessData.git"
     pod 'WTBusinessView', :git => "https://github.com/aliang666/WTBusinessView.git"
     
+    #模块
+    pod 'WTWebViewModel', :git => "https://github.com/aliang666/WTWebViewModel.git"
     pod 'WTLoginModel', :git => "https://github.com/aliang666/WTLoginModel.git"
     pod 'WTTranslateModel', :git => "https://github.com/aliang666/WTTranslateModel.git"
     pod 'WTDeviceModel', :git => "https://github.com/aliang666/WTDeviceModel.git"
     pod 'WTUserCenterModel', :git => "https://github.com/aliang666/WTUserCenterModel.git"
+
+    #模块间跳转中间件
+    pod 'WTMediator', :git => "https://github.com/aliang666/WTMediator.git"
 
     #pod 'WTBaseCore', :git => "https://github.com/aliang666/WTBaseCore.git" , :tag => "0.0.1"
 end
