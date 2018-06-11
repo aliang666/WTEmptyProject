@@ -7,6 +7,7 @@ target "WTEmptyProject" do
     #业务数据和自定义view
     pod 'WTBusinessData', :git => "https://github.com/aliang666/WTBusinessData.git"
     pod 'WTBusinessView', :git => "https://github.com/aliang666/WTBusinessView.git"
+    pod 'WTMSCEngine', :git => "https://github.com/aliang666/WTMSCEngine.git"
     
     #模块
     pod 'WTWebViewModel', :git => "https://github.com/aliang666/WTWebViewModel.git"
