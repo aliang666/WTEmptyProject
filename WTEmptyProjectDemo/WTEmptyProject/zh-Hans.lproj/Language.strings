@@ -35,3 +35,19 @@
 
 "my_login_login_out" = "退出";
 "userinfo_save"="保存";
+
+//翻译界面
+"tab_trans" = "翻译";
+"my_play_sample_text" = "欢迎使用讯飞语音翻译";
+"trans_title_zh" = "中";
+"trans_title_en" = "英";
+"trans_btn_zh" = "中文";
+"my_language_en_en" = "英文";
+"trans_translat_land" = "面对面翻译";
+//alert
+"delect_recored"="确定清空所有翻译记录吗？";
+"app_cancel" = "取消";
+"app_confirm" = "确定";
+"input_content"="请输入内容";
+"loading"="加载中";
+"ic_trans_empty_view"="ic_trans_empty_view";

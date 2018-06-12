@@ -95,5 +95,25 @@ weibo.com
 			</dict>
 		</dict>
 	</dict>
+	<key>NSBluetoothPeripheralUsageDescription</key>
+	<string>讯飞翻译需要打开您的蓝牙功能</string>
+	<key>NSCalendarsUsageDescription</key>
+	<string>讯飞翻译想访问你的日历</string>
+	<key>NSCameraUsageDescription</key>
+	<string>讯飞翻译机想打开您的视频</string>
+	<key>NSContactsUsageDescription</key>
+	<string>use</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>use</string>
+	<key>NSLocationUsageDescription</key>
+	<string>use</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>use</string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>讯飞翻译想访问您的相册</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>讯飞翻译想访问您的相册</string>
+	<key>app share date using  corebluetooth</key>
+	<string></string>
 </dict>
 </plist>
