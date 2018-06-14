@@ -21,7 +21,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    self.window.backgroundColor = [UIColor redColor];
+    self.window.backgroundColor = [UIColor whiteColor];
     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];    
     
     //读取登录信息
@@ -35,20 +35,20 @@
     if ([WTLoginInfo isLogin]) {
         WTTabBarItem *itIndex = [[WTTabBarItem alloc] init];
         itIndex.titleText = @"翻译";
-        itIndex.normalImage = @"ind_btn_tab_work_n";
-        itIndex.selectImage = @"ind_btn_tab_work_s";
+        itIndex.normalImage = @"tabbar_translate";
+        itIndex.selectImage = @"tabbar_translate_highlighted";
         itIndex.vc = [[WTTranslateViewController alloc] init];
         
         WTTabBarItem *itCenter = [[WTTabBarItem alloc] init];
         itCenter.titleText = @"设备";
-        itCenter.normalImage = @"ind_btn_tab_news_n";
-        itCenter.selectImage = @"ind_btn_tab_news_s";
+        itCenter.normalImage = @"tabbar_application";
+        itCenter.selectImage = @"tabbar_profile_highlighted";
         itCenter.vc = [[WTDeviceViewController alloc] init];
         
         WTTabBarItem *itMine = [[WTTabBarItem alloc] init];
         itMine.titleText = @"我的";
-        itMine.normalImage = @"ind_btn_tab_tool_n";
-        itMine.selectImage = @"ind_btn_tab_tool_s";
+        itMine.normalImage = @"tabbar_profile";
+        itMine.selectImage = @"tabbar_profile_highlighted";
         itMine.vc = [[WTUserCenterViewController alloc] init];
         
         WTTabbarController *tab = [[WTTabbarController alloc] init];

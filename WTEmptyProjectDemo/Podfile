@@ -4,10 +4,11 @@ inhibit_all_warnings!
 target "WTEmptyProject" do
     #基础包
     pod 'WTBaseCore', :git => "https://github.com/aliang666/WTBaseCore.git"
+    pod 'WTBlueToothEngine', :git => "https://github.com/aliang666/WTBlueToothEngine.git"
+    pod 'WTMSCEngine', :git => "https://github.com/aliang666/WTMSCEngine.git"
     #业务数据和自定义view
     pod 'WTBusinessData', :git => "https://github.com/aliang666/WTBusinessData.git"
     pod 'WTBusinessView', :git => "https://github.com/aliang666/WTBusinessView.git"
-    pod 'WTMSCEngine', :git => "https://github.com/aliang666/WTMSCEngine.git"
     
     #模块
     pod 'WTWebViewModel', :git => "https://github.com/aliang666/WTWebViewModel.git"
