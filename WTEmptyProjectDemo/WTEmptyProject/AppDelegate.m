@@ -34,19 +34,19 @@
 - (void)initRoot {
     if ([WTLoginInfo isLogin]) {
         WTTabBarItem *itIndex = [[WTTabBarItem alloc] init];
-        itIndex.titleText = @"翻译";
+        itIndex.titleText = [[WTLanguageUtil shareInstance] valueForKey:@"translate_title"];
         itIndex.normalImage = @"tabbar_translate";
         itIndex.selectImage = @"tabbar_translate_highlighted";
         itIndex.vc = [[WTTranslateViewController alloc] init];
         
         WTTabBarItem *itCenter = [[WTTabBarItem alloc] init];
-        itCenter.titleText = @"设备";
+        itCenter.titleText = [[WTLanguageUtil shareInstance] valueForKey:@"device_title"];
         itCenter.normalImage = @"tabbar_application";
         itCenter.selectImage = @"tabbar_profile_highlighted";
         itCenter.vc = [[WTDeviceViewController alloc] init];
         
         WTTabBarItem *itMine = [[WTTabBarItem alloc] init];
-        itMine.titleText = @"我的";
+        itMine.titleText = [[WTLanguageUtil shareInstance] valueForKey:@"user_title"];
         itMine.normalImage = @"tabbar_profile";
         itMine.selectImage = @"tabbar_profile_highlighted";
         itMine.vc = [[WTUserCenterViewController alloc] init];
